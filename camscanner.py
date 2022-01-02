@@ -10,7 +10,8 @@ def point_camscanner(event,x,y,flags,params):
         circles[counter] = x,y
         counter = counter + 1
         print(circles)
-img = cv2.imread(r"D:\khodam\shiraz\IMG_8803.JPG")
+path = input("Enter the path of the photo :")
+img = cv2.imread(path)
 while True :
     if counter == 4:
         height , width = 250 , 350
